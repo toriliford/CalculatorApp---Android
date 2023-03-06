@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sage_green"
+    tools:context=".MileageCalculator">
+
+    <TextView
+        android:id="@+id/gas_page_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20sp"
+        android:background="@color/rich_black"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/second_calc_name"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_backid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/gas_page_banner"
+        />
+
+    <ImageView
+        android:id="@+id/gas_pic"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/gas_pump"
+        android:paddingTop="7dp"
+        android:contentDescription="@string/img_two"
+        android:layout_below="@id/btn_backid"
+        />
+
+    <TextView
+        android:id="@+id/tvOne"
+        android:labelFor="@id/edTxtOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/rich_black"
+        android:text="@string/mileageQOne"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/gas_pic"
+        />
+
+    <EditText
+        android:id="@+id/edTxtOne"
+        android:layout_width="wrap_content"
+        android:inputType="number"
+        android:hint="@string/zero"
+        android:layout_height="48dp"
+        android:layout_below="@id/tvOne"
+        android:ems="3"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tvTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/edTxtTwo"
+        android:background="@color/rich_black"
+        android:text="@string/mileageQTwo"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edTxtOne"
+        />
+
+    <EditText
+        android:id="@+id/edTxtTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/tvTwo"
+        android:ems="3"
+        android:hint="@string/zero"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/btn_gas_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculateMPG"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edTxtTwo"
+        />
+
+    <TextView
+        android:id="@+id/tvFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/mileageOutput"
+        android:layout_below="@id/btn_gas_calc"
+        />
+
+    <TextView
+        android:id="@+id/finalTxtView"
+        android:text="@string/zeroMpg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/btn_gas_calc"
+        android:layout_alignParentEnd="true"
+        android:ems="7"
+        />
+
+</RelativeLayout>

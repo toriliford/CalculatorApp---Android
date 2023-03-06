@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sage_green"
+    tools:context=".PetAgeCalculator">
+
+    <TextView
+        android:id="@+id/age_page_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20sp"
+        android:background="@color/rich_black"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/third_calc_name"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_backid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/age_page_banner"
+        />
+
+    <ImageView
+        android:id="@+id/catdog_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/cat_and_dog"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="7dp"
+        android:contentDescription="@string/img_three"
+        android:layout_below="@id/btn_backid"
+        />
+
+    <TextView
+        android:id="@+id/txtSpecies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/catdog_img"
+        android:layout_centerHorizontal="true"
+        android:text="@string/petageTxtOne"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:background="@color/rich_black"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinner_species"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtSpecies"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:background="@color/white"
+        android:prompt="@string/spinnerHint"
+        />
+
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_species"
+        android:layout_centerHorizontal="true"
+        android:text="@string/petageTxtTwo"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:background="@color/rich_black"
+        />
+
+    <EditText
+        android:id="@+id/edTxtAge"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/txtAge"
+        android:layout_marginTop="7dp"
+        android:layout_centerHorizontal="true"
+        android:ems="5"
+        android:background="@color/white"
+        android:hint="@string/zero"
+        />
+
+    <Button
+        android:id="@+id/btnCalcAge"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/edTxtAge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/calc_btn_pets"
+        />
+
+    <TextView
+        android:id="@+id/tvthree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:text="@string/petageTxtThree"
+        android:layout_below="@id/btnCalcAge"
+        />
+
+    <TextView
+        android:id="@+id/ageTxtViewFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_below="@id/btnCalcAge"
+        android:layout_alignParentEnd="true"
+        android:ems="7"
+        />
+
+</RelativeLayout>

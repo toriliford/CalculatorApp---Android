@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Multi-Calculator Application</string>
+    <string name="first_calc_name">Tip Calculator</string>
+    <string name="second_calc_name">Gas Mileage Calculator</string>
+    <string name="third_calc_name">Pet Age Calculator</string>
+    <string name="use_calc">Open Calculator</string>
+    <string name="title_activity_tip_calculator">TipCalculator</string>
+
+    <string name="img_one">Image of Money</string>
+    <string name="img_two">Image of Gas Pump</string>
+    <string name="img_three">Image of Pets</string>
+
+    <string name="btn_back">Back</string>
+    <string name="tip_qu_one">Enter the total of your bill:</string>
+    <string name="tip_percent">Choose a tip percentage:</string>
+    <string name="tip_final_btn">Calculate Tip</string>
+    <string name="ten_percent">10%</string>
+    <string name="fifteen_percent">15%</string>
+    <string name="twenty_percent">20%</string>
+    <string name="basicTView">Tip Amount  :  </string>
+
+    <string name="mileageQOne">How many gallons of gas does your vehicle\'s tank hold?</string>
+    <string name="mileageQTwo">How many miles can your vehicle drive on a full tank?</string>
+    <string name="calculateMPG">Calculate MPG</string>
+    <string name="mileageOutput">Your vehicle averages  </string>
+    <string name="zeroMpg">0  MPG</string>
+    <string name="zero">0</string>
+
+    <string name="petageTxtOne">Choose your pet\'s species</string>
+    <string name="petageTxtTwo">Enter your pet\'s age</string>
+    <string-array name="species_array">
+        <item>Small Dog</item>
+        <item>Average Dog</item>
+        <item>Big Dog</item>
+        <item>Indoor Cat</item>
+        <item>Outdoor Cat</item>
+        <item>Goldfish</item>
+        <item>Turtle</item>
+        <item>Lizard</item>
+        <item>Snake</item>
+        <item>Rat</item>
+        <item>Rabbit</item>
+    </string-array>
+    <string name="spinnerHint">SPECIES</string>
+    <string name="calc_btn_pets">Calculate Age</string>
+    <string name="petageTxtThree">Your pet\'s human age is  </string>
+
+</resources>
